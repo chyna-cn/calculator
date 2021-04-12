@@ -1,0 +1,48 @@
+#display{
+    display:flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    flex-direction:column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    width:auto;
+    height:250px;
+    background-color:#595959;
+    border:1px solid #595959;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.previous{
+    color:red;
+    font-size: 20px;
+}
+
+.current{
+    color: yellow;
+    font-size:55px;
+
+}
+#grid{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: minmax(120px auto) repeat(5 , 100px);
+    height: 600px;
+}
+
+#item{
+    grid-column: 1/span 2;
+}
+.operator, .key, .color , .allClear{
+    font-size:60px;
+}
+
+.color{
+    background-color: #ffa500;
+}
+#display > p {
+    margin: 0;
+}
